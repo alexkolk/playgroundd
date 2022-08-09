@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype testground</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+
+</head>
+<body>
+<div class="top-container">
+<!--    for structuring and dividing your content into boxes so you can effect the layout of each box separately
+use chrome inspect and styles to test out the box -->
+    <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
+    <h1>Prototype testground</h1>
+    <h2>Gotta test them all!</h2>
+    <img src="images/mountain.png" alt="mountain-img">
+    <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
+
+<!--Css display 4 properties:-->
+<!--    1)block elements usually take the entire row, paragraphs, headers, divs, lists and forms-->
+<!--    block everything from being on the same line as them-->
+<!--    2)<span class=""> in between of words-->
+<!--    its known as an inline display element, takes as much space as needs to in height and width-->
+<!--    also spans, images and anchor tags-->
+<!--    with inline elements you cant change the width, thats why we need block elements-->
+<!--    3)inline block elements display: inline-block; can put on same line and then change width-->
+<!--    4)display none - gets rid of our element, as if its deleted-->
+
+<!--CSS positioning / static and relative-->
+<!--    there are already predefined rules for everything even if u put no CSS, we need to understand default before we change-->
+<!--    1)Content is everything that determines width and height, height as long as content, width depends if inline or block whole line or not-->
+<!--    2)Order of elements comes from code by default-->
+<!--    3)Children sit on parents, a h1 infront of a div-->
+<!--    4)Position property to position them how you want to instead of the default-->
+<!--        Static - all elements are static by default, keeping the html default flow-->
+<!--        Relative - the element we select positioned relative to where it wouldve been by default-->
+<!--                Coordinates: top bottom left right-->
+<!--                1)When you move an element that has a relative position,-->
+<!--                it doesnt effect the position of anything else of the screen-->
+<!--                leaves a ghost, other things dont move-->
+<!--                2)top means relative to the top where it used to be so it goes down-->
+<!--        Absolute-->
+<!--                positioning the element relative to its parent, affects others too
+                    Parent is not always the background, it can also be a container within it is
+-->
+<!--        Fixed
+                    stays where it is despite scrolling - navbars fixed following user or sidebar
+
+            Font scheme&color palette
+                    1)Serifs (things on the ends)
+                    2)Sans-serifs
+                    fonts.google.com, css web safefonts so its same experience for all, backup fonts
+            Content
+                lorem ipsum generator
+                https://www.flaticon.com/
+                giphy.com for gifs
+-->
+
+
+
+
+<!--the box model of website styling / stretching things out of the way, creating borders, border boldness,-->
+<!--automatic height width of the -->
+<!--content of the box usually, if we want padding we can give padding-->
+<!--margin between this box and another box-->
+
+</div>
+
+<iframe src="https://giphy.com/embed/MuADHrl233JLBLQCFO" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/MuADHrl233JLBLQCFO">via GIPHY</a></p>
+
+<div class="middle-container">
+  <div class="profile">
+    <img src="images/kid.png" alt="kid">
+    <h2>Hello.</h2>
+    <p class="intro">Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+  </div>
+  <hr>
+  <div class="skills">
+
+    <h2>My Skills.</h2>
+
+  <div class="skill-row">
+      <img class="img-name1" src="" alt="">
+      <h3>Lorem & Ipsum</h3>
+      <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+  </div>
+
+    <div class="skill-row">
+      <img class="img-name2" src="" alt="">
+      <h3>Lorem Ipsum Dolor</h3>
+      <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="contact">
+    <h2>Get In Touch</h2>
+    <h3>Lorem ipsum dolor sit amet, non elit.</h3>
+    <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
+    <button class="btn" href="mailto:name@email.com">CONTACT ME</button>
+  </div>
+</div>
+
+<!--
+CSS SIZING
+
+px / em / rem some stack some dont, some relative some not, one em 16 pixels
+
+CSS float and clear
+
+Floating, making text wrap around, has lots of corner cases, only use wraping text, dont use for positioning
+Clear:left; nothing floating on the left, the antifloat
+
+responsive web design, bootstrap that doesnt change when user changer
+https://www.frontendmentor.io/challenges
+
+
+-->
+
+
+<div class="bottom-container">
+  <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+  <a class="footer-link" href="https://twitter.com/">Twitter</a>
+  <a class="footer-link" href="alexkolk.com">Website</a>
+  <p class="copyr"> © 2022 alexus</p>
+</div>
+
+
+
+
+</body>
+</html>
